@@ -37,7 +37,7 @@ BOARD_NFC_CHIPSET := pn547
 
 #TWRP
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-TW_THEME := mdpi_portrait
+TW_THEME := portrait_mdpi
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/w5c
