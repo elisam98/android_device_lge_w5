@@ -1,3 +1,0 @@
-on property:sys.usb.config=mtp
-	start adbd
-	setprop sys.usb.state ${sys.usb.config},adb

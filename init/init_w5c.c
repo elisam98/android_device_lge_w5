@@ -78,11 +78,39 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     UNUSED(board_type);
 
     property_get("ro.boot.serialno", serial);
-    if (strncmp(serial, "LGLS620", 7) == 0) {
+    if (strncmp(serial, "LGD320", 6) == 0) {
+        if (check_cmdline("model.name=LG-D320n") == 1) {
+                property_set("ro.product.device", "w5");
+                property_set("ro.product.model", "LG-D320n");
+                property_set("ro.nfc.port", "I2C");
+        } else {
+                property_set("ro.product.device", "w5");
+                property_set("ro.product.model", "LG-D320");
+        }
+        property_set("ro.build.description", "w5_global_com-user 4.4.2 KOT49I.A1398228431 1398228431 release-keys");
+        property_set("ro.build.fingerprint", "lge/w5_global_com/w5:4.4.2/KOT49I.A1398228431/1398228431:user/release-keys");
+        property_set("persist.radio.multisim.config", "");
+        property_set("telephony.lteOnCdmaDevice", "0");
+    } else if (strncmp(serial, "LGD325", 6) == 0) {
+        property_set("ro.product.device", "w5ds");
+        property_set("ro.product.model", "LG-D325");
+        property_set("ro.build.description", "w5ds_global_com-user 4.4.2 KOT49I.D41510c D41510c.1393916607 release-keys");
+        property_set("ro.build.fingerprint", "lge/w5ds_global_com-user/w5ds:4.4.2/KOT49I.D41510c/D41510c.1393916607:user/release-keys");
+                property_set("persist.radio.multisim.config", "dsds");
+        property_set("telephony.lteOnCdmaDevice", "0");
+    } else if (strncmp(serial, "LGMS323", 7) == 0) {
+        property_set("ro.product.device", "w5");
+        property_set("ro.product.model", "LG-MS323");
+        property_set("ro.build.description", "w5_global_com-user 4.4.2 KOT49I.D41510c D41510c.1393916607 release-keys");
+        property_set("ro.build.fingerprint", "lge/w5_global_com-user/w5ds:4.4.2/KOT49I.D41510c/D41510c.1393916607:user/release-keys");
+        property_set("persist.radio.multisim.config", "");
+        property_set("telephony.lteOnCdmaDevice", "0");
+   } else if (strncmp(serial, "LGLS620", 7) == 0) {
         property_set("ro.product.device", "w5c");
         property_set("ro.product.model", "LG-LS620");
-        property_set("ro.build.description", "w5c_spr_us-user 4.4.3 KOT49I.LS620ZV3 release-keys");
-        property_set("ro.build.fingerprint", "lge/w5c_spr_us/w5c:4.4./KOT49I.LS620ZV3:user/release-keys");
+        property_set("ro.build.description", "w5c_spr_us_user 4.4.3 KOT49I. LS620ZV4 D41510c.1393916607 release-keys");
+        property_set("ro.build.fingerprint", "lge/w5c_spr_us-user/w5c:4.4.3/KOT49I.LS620ZV4/ LS620ZV4 .1393916607:user/release-keys");
+        property_set("persist.radio.multisim.config", "");
         property_set("telephony.lteOnCdmaDevice", "0");
     } else {
         /* XXX */
