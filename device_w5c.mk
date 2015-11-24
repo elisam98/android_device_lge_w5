@@ -23,6 +23,10 @@ DEVICE_PACKAGE_OVERLAYS += device/lge/w5c/overlay
 
 PRODUCT_PACKAGES += Torch
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.msm8610
+
 # NFC packages
 PRODUCT_PACKAGES += \
     NfcNci \

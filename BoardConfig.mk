@@ -37,6 +37,9 @@ TARGET_OTA_ASSERT_DEVICE := w5c
 # Nfc
 BOARD_NFC_CHIPSET := pn547
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 #TWRP
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_THEME := portrait_hdpi
