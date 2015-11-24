@@ -26,7 +26,7 @@
 TARGET_KERNEL_CONFIG := w5c_spr_us_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/w5c/mkbootimg.mk
 
-BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
+# BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 TARGET_LIBINIT_DEFINES_FILE := device/lge/w5c/init/init_w5c.c
 
