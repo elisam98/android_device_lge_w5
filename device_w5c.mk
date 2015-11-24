@@ -53,8 +53,7 @@ PRODUCT_COPY_FILES += \
     device/lge/w5c/prebuilt/usr/keylayout/Generic-D325.kl:system/usr/keylayout/Generic-D325.kl \
     device/lge/w5c/prebuilt/usr/keylayout/Generic-MS323.kl:system/usr/keylayout/Generic-MS323.kl \
     device/lge/w5c/prebuilt/usr/keylayout/Generic-LS620.kl:system/usr/keylayout/Generic-LS620.kl \
-    device/lge/w5c/fstab.msm8610:root/fstab.msm8610 \
-    device/lge/w5c/eri.xml:data/eri.xml
+    device/lge/w5c/fstab.msm8610:root/fstab.msm8610
 
 PRODUCT_LOCALES := en_US
 PRODUCT_LOCALES += hdpi
