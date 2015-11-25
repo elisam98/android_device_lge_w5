@@ -184,7 +184,7 @@
     <bool name="config_intrusiveBatteryLed">false</bool>
 
     <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">false</bool>
+    <bool name="config_multiColorBatteryLed">true</bool>
 
     <!-- Workaround for devices with broken keyboards -->
     <bool name="config_forceDisableHardwareKeyboard">true</bool>
@@ -295,7 +295,7 @@
             32 - Camera
         For example, a device with Home, Back and Menu keys would set this
         config to 7. -->
-    <integer name="config_deviceHardwareKeys">39</integer>
+    <integer name="config_deviceHardwareKeys">7</integer>
 
     <!-- Disable lockscreen translucent decor by default -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
